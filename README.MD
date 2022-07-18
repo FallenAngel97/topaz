@@ -1,4 +1,4 @@
-# tOPAz - package manager for the Open Policy agent
+# 💎 tOPAz - package manager for the [Open Policy agent](https://www.openpolicyagent.org)
 
 The goal of topaz is to manage dependencies in a convenient way,
 that can be utilized by the rego language
