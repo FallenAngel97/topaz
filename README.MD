@@ -24,6 +24,13 @@ pip install -r requirements.txt
 }
 ```
 
+Place into "git" section links ro repositories, which should be downloaded
+and placed into the current folder
+
 ## Available commands
 
 - **restore** - reads the `topaz.json` file and downloads them into `_topaz` folder. 
+After restore ahve been completed, it will also create a topaz.lock file, which have
+the necessary versions of repositories
+
+- **init** - creates the `topaz.json` with the default values
