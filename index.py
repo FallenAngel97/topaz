@@ -3,6 +3,7 @@
 import argparse
 import sys
 import json
+import os.path
 
 from git import Repo
 
@@ -41,6 +42,10 @@ class SelectModeAction(argparse.Action):
 
     
     def init(self):
+        topaz_json_exists = os.path.isfile('topaz.json')
+        if topaz_json_exists: 
+            print('⚠️  topaz.json already present!')
+            return
         print(f"Initialized a template for the OPA policies.✨\nOpen {text_style.BOLD}topaz.json{text_style.END} and define some of your dependencies")
         topaz_json = open('topaz.json', 'a')
         topaz_json.write(topaz_default_contents)
