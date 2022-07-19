@@ -1,3 +1,5 @@
 _topaz
 topaz-env
 __pycache__
+dist
+*.egg-info

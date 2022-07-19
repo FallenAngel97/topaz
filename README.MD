@@ -3,6 +3,12 @@
 The goal of topaz is to manage dependencies in a convenient way,
 that can be utilized by the rego language
 
+## Install 
+
+```bash
+pip install topaz-opa
+```
+
 ## Local installation
 
 I would suggest to make a virtualenv to not pollute the global packages
